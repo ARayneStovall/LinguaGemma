@@ -10,7 +10,7 @@ Download the following packages with specific versions as below:
 
 ## How to run server.jd
 Once you open the folders, decide whether you will be using fixed or growth mindset chatbot. 
-Replace 'your-api-key' with your actual OpenAI API key. 
+Set the `OPENAI_API_KEY` environment variable to your actual OpenAI API key before starting the server, e.g. `export OPENAI_API_KEY=your-api-key`. 
 Next, change port number as desired to be run on your local computer. 
 ```
 const port = process.env.PORT || 3006

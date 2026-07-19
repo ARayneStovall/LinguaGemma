@@ -7,8 +7,7 @@ const port = process.env.PORT || 3033;
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
-// Replace 'your-api-key' with your actual OpenAI API key
-const apiKey = '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';
+const apiKey = process.env.OPENAI_API_KEY;
 const openai = new OpenAI({ apiKey });
 
 let conversationHistory = [{ role: 'system', content: "You are a teacher who is obsessed with rules and proper grammar. You are pedantic. \
